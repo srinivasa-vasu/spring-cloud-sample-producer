@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: sv-producer
+server:
+  port: 8080
+eureka:
+  instance:
+    appname: sv-producer
+    instance-id: sv-producer
+    app-group-name: sv-producer
+  client:
+    fetch-registry: true
+    prefer-same-zone-eureka: false
+    register-with-eureka: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
