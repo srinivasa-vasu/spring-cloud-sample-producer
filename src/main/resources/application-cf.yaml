@@ -1,6 +1,8 @@
 eureka:
   instance:
     hostname: sv-producer.cfapps.io
+    secure-port: 443
+    secure-port-enabled: true
   client:
     service-url:
       defaultZone: http://sv-registry-server.apps.internal:8080/eureka

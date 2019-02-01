@@ -3,4 +3,4 @@ eureka:
     hostname: sv-consumer.pksapps.humourmind.com
   client:
     service-url:
-      defaultZone: sv-registry-server.svc.cluster.local:8080/eureka
+      defaultZone: http://sv-registry-server.service-registry.svc.cluster.local/eureka
